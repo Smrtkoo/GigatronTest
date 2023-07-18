@@ -4,11 +4,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PopUpPage extends BasePage{
-    @FindBy(css = ".mf-modal-iframe.mf-modal-iframe-middle.mf-animate.mf-loaded")
+    /*@FindBy(css = ".mf-modal-iframe.mf-modal-iframe-middle.mf-animate.mf-loaded")
     WebElement iframe;
 
     @FindBy(css = ".mf-modal-container .mf-modal-close")
-    WebElement close;
+    WebElement close;*/
 
     @FindBy(css = ".btn.secondary")
     WebElement buttonPrihvati;
@@ -18,11 +18,11 @@ public class PopUpPage extends BasePage{
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-    public void clickOnPopUp ()
+    /*public void clickOnPopUp ()
     {
         driver.switchTo().frame(iframe);
         close.click();
-    }
+    }*/
     public void clickPrihvati()
     {
         buttonPrihvati.click();
